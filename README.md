@@ -25,3 +25,20 @@ install.packages(c(
   "glmnet",
   "rstan"
 ))
+
+#EXAMPLE RUN-------------------------------
+source("ben_cox_metabric.R")
+
+# quick test run (small iteration counts)
+results <- run_complete_analysis(
+  data_file = "METABRIC_RNA_Mutation.csv",
+  n_iter    = 200,
+  n_warmup  = 100
+)
+
+# for the paper-level analysis, use something like:
+# results <- run_complete_analysis(
+#   data_file = "METABRIC_RNA_Mutation.csv",
+#   n_iter    = 2000,
+#   n_warmup  = 1000
+# )
