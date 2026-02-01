@@ -1,7 +1,7 @@
-## ============================================================
+
 ## Bayesian Elastic-Net Cox Models (Powered by Stan)
 ## CORRECTED VERSION: Fixed Lambda Priors
-## ============================================================
+
 
 library(survival)    
 library(ggplot2)     
@@ -783,3 +783,4 @@ run_complete_analysis <- function(data_file, n_iter = 2000, n_warmup = 1000, n_b
 # EXECUTE
 # =====================
 results <- run_complete_analysis("METABRIC_RNA_Mutation.csv", n_iter = 2000, n_warmup = 1000, n_boot = 50)
+
