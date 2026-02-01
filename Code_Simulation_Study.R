@@ -1,8 +1,7 @@
-## ============================================================
+
 ## Simulation Study for BEN-Cox Paper (CORRECTED)
 ## Fixed: Lambda priors changed to Half-Cauchy(0,1)
-## Fixed: output_dir moved inside main function
-## ============================================================
+
 
 library(survival)
 library(glmnet)
@@ -605,4 +604,5 @@ run_full_simulation_study <- function(n_reps = 100, ben_iter = 1000, ben_warmup 
 # =====================
 # For testing: n_reps = 5, ben_iter = 100, ben_warmup = 50
 # For final paper: n_reps = 100, ben_iter = 1000, ben_warmup = 500
+
 sim_results <- run_full_simulation_study(n_reps = 50, ben_iter = 1000, ben_warmup = 500)
