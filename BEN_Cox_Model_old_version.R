@@ -494,3 +494,4 @@ results <- run_complete_analysis("METABRIC_RNA_Mutation.csv", n_iter=200, n_warm
 # Top genes view
 # dat <- preprocess_metabric("METABRIC_RNA_Mutation.csv")
 # view_top_genes(results$ben, dat$gene_names)
+
